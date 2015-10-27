@@ -5,7 +5,7 @@
   "author": "B man",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "app.js",
+    "start": "app.js"
   },
   "devDependencies": {
     "mocha": "^1.21.4",
