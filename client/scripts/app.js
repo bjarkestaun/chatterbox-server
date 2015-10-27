@@ -3,7 +3,7 @@
 
 var app = {
   username: globalUser,
-  server: 'http://127.0.0.1:3000/classes',
+  server: 'http://chatterbox-2015.herokuapp.com/classes',
   data: null,
   rooms: {},
   friends: {},
