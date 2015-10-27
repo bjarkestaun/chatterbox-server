@@ -1,11 +1,11 @@
 {
   "name": "chatterbox",
   "version": "0.0.1",
-  "main": "server/basic-server.js",
-  "author": "Hack Reactor",
+  "main": "app.js",
+  "author": "B man",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "node server/basic-server.js",
+    "start": "app.js",
     "test": "mocha server/spec"
   },
   "devDependencies": {
