@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "server/basic-server.js",
   "author": "Hack Reactor",
-  "license": "Copyright 2013, Hack Reactor. All rights reserved.",
+  "license": "UNLICENSED",
   "scripts": {
     "start": "node server/basic-server.js",
     "test": "mocha server/spec"
@@ -12,5 +12,19 @@
     "mocha": "^1.21.4",
     "request": "^2.34.0",
     "chai": "^1.9.0"
-  }
+  },
+  "dependencies": {
+    "chai": "^1.10.0",
+    "express": "^4.13.3",
+    "request": "^2.65.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjarkestaun/2015-10-chatterbox-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bjarkestaun/2015-10-chatterbox-server/issues"
+  },
+  "homepage": "https://github.com/bjarkestaun/2015-10-chatterbox-server#readme",
+  "description": ""
 }
