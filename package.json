@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node app.js",
-    "postinstall": "npm install bower && bower install",
+    "postinstall": "bower cache clean && bower install",
     "test": "mocha server/spec"
   },
   "devDependencies": {
