@@ -27,7 +27,15 @@ var requestHandler = function(request, response) {
   // Adding more logging to your server can be an easy way to get passive
   // debugging help, but you should always be careful about leaving stray
   // console.logs in your code.
-  this.data = {};
+  this.data = {
+    results: [
+      {
+        username: 'bart',
+        roomname: 'springfield',
+        text: 'yo'
+      }
+    ]
+  };
 
   console.log("Serving request type " + request.method + " for url " + request.url);
 
@@ -55,22 +63,12 @@ var requestHandler = function(request, response) {
   // Calling .end "flushes" the response's internal buffer, forcing
   // node to actually send all the data over to the client.
 
-  data = JSON.stringify({
-    results: [
-      {
-        text: 'yo',
-        username: 'bart',
-        room: 'hackreactor'
-      },
-      {
-        text: 'hey',
-        username: 'ooo',
-        room: 'hackreactor'
-      }
-    ]
-  });
-
-  response.end(data);
+  if(request.method === 'GET') {
+    response.end(JSON.stringify(this.data));
+  }
+  if(request.method === 'POST') {
+    this.data.push(request.)
+  }
 
 };
 
