@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "app.js",
-    "test": "mocha server/spec"
+    // "test": "mocha server/spec"
   },
   "devDependencies": {
     "mocha": "^1.21.4",
