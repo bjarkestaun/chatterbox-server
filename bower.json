@@ -1,0 +1,21 @@
+{
+  "name": "chatterbox",
+  "description": "chat app for the 21st century",
+  "main": "app.js",
+  "authors": [
+    "B man"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "chatterbox-2015.herokuapp.com",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ]
+}
