@@ -1,9 +1,9 @@
 
-//////////////////////////////////
+// this.set('username', decodeURIComponent(window.location.search).slice("?username=".length));
 
 var app = {
-  username: globalUser,
-  server: 'http://chatterbox-2015.herokuapp.com/classes',
+  username: decodeURIComponent(window.location.search).slice("?username=".length),
+  server: '/classes',
   data: null,
   rooms: {},
   friends: {},
