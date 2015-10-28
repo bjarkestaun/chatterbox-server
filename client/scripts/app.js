@@ -1,12 +1,12 @@
 
-// this.set('username', decodeURIComponent(window.location.search).slice("?username=".length));
-
 var app = {
-  username: decodeURIComponent(window.location.search).slice("?username=".length),
   server: '/classes',
   data: null,
   rooms: {},
   friends: {},
+  getUserName: function() {
+    return decodeURIComponent(window.location.search).slice("?username=".length).replace(new RegExp('%20', 'g'), ' ');
+  },
   clearMessages: function() {
     $('.chat').children().remove();
   },
@@ -63,6 +63,7 @@ var app = {
   },
   send: function(message) {
     // Posting method
+    console.log(message);
     $.ajax({
       url: app.server + '/send',
       type: 'POST',

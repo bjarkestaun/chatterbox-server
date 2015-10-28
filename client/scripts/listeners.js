@@ -16,7 +16,7 @@ $(document).ready(function() {
     event.preventDefault();
     var message = {
       text: $('.message-entry').val(),
-      username: app.username,
+      username: app.getUserName(),
       roomname: $('.roomname-entry').val(),
     };
     app.send(message);
