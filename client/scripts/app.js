@@ -69,9 +69,10 @@ var app = {
       data: JSON.stringify(message),
       contentType: 'application/json',
       success: function (data) {
-
         console.log('chatterbox: Message sent');
         console.dir(message);
+        app.clearMessages();
+        app.fetch();
       },
       error: function (data) {
         // See: https://developer.mozilla.org/en-US/docs/Web/API/console.error
@@ -90,3 +91,8 @@ var app = {
 };
 
 app.init();
+setInterval(function() {
+  app.clearMessages();
+  app.fetch();
+}, 5000);
+

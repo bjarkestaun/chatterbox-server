@@ -12,13 +12,15 @@ $(document).ready(function() {
     $('.message').show();
   })
 
-  $('.send-message').on('click', function() {
+  $('form').on('submit', function() {
+    event.preventDefault();
     var message = {
       text: $('.message-entry').val(),
       username: app.username,
       roomname: $('.roomname-entry').val(),
     };
     app.send(message);
+    $('.message-entry').val('');
   })
 
   $('.chat').on('click', '.username', function() {
